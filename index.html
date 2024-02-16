@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Espaços - Casa de Cultura Kumbuca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <h1>Reserva de Espaços - Casa de Cultura Kumbuca</h1>
+        <form id="spaceReservationForm">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="espaco">Espaço Desejado:</label>
+                <select id="espaco" name="espaco" required>
+                    <option value="" disabled selected>Selecione o Espaço</option>
+                    <option value="Sala de Reuniões">Sala de Reuniões</option>
+                    <option value="Áreas de Convivência">Áreas de Convivência</option>
+                    <option value="Estúdio Podcast">Estúdio Podcast</option>
+                    <option value="Estúdio Musical">Estúdio Musical</option>
+                    <!-- Adicione outras opções de espaços aqui -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="data">Data da Reserva:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <button type="button" id="btnReservar">Reservar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
